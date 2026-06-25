@@ -1,0 +1,43 @@
+# Build folders
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.rsuser
+
+# Visual Studio
+.vs/
+
+# VS Code
+.vscode/
+
+# Rider
+.idea/
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+
+# NuGet packages
+*.nupkg
+
+# Publish output
+publish/
+
+# Node modules (for Angular)
+node_modules/
+
+# Angular build output
+dist/
+
+# Environment files
+.env
+.env.*
+
+# Coverage
+coverage/
