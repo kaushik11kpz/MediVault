@@ -1,0 +1,48 @@
+<div *ngIf="medicines.length === 0" class="empty-state">
+
+    No medicines available.
+
+</div>
+
+<table
+    *ngIf="medicines.length > 0"
+    class="medicine-table">
+
+    <thead>
+
+        <tr>
+
+            <th>Name</th>
+            <th>Brand</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Expiry</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        <tr
+            *ngFor="let medicine of medicines"
+            [ngClass]="{
+                'expiring': isExpiringSoon(medicine.expiryDate),
+                'low-stock': !isExpiringSoon(medicine.expiryDate) && isLowStock(medicine.quantity)
+            }">
+
+            <td>{{ medicine.fullName }}</td>
+
+            <td>{{ medicine.brand }}</td>
+
+            <td>{{ medicine.price | currency:'INR' }}</td>
+
+            <td>{{ medicine.quantity }}</td>
+
+            <td>{{ medicine.expiryDate | date:'dd-MMM-yyyy' }}</td>
+
+        </tr>
+
+    </tbody>
+
+</table>

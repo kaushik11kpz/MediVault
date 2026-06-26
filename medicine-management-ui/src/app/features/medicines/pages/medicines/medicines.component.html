@@ -1,0 +1,22 @@
+<div class="container">
+
+    <h1>💊 Medicine Management System</h1>
+
+    <app-medicine-form
+        (medicineAdded)="onMedicineAdded($event)">
+    </app-medicine-form>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            placeholder="🔍 Search by medicine name..."
+            [(ngModel)]="searchText">
+
+    </div>
+
+    <app-medicine-list
+        [medicines]="filteredMedicines">
+    </app-medicine-list>
+
+</div>

@@ -1,0 +1,71 @@
+.empty-state {
+
+    padding:40px;
+
+    text-align:center;
+
+    background:white;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+    color:#777;
+
+    font-size:18px;
+
+}
+
+.medicine-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+    background:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+.medicine-table th{
+
+    background:#2563eb;
+
+    color:white;
+
+    padding:14px;
+
+}
+
+.medicine-table td{
+
+    padding:12px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.medicine-table tr:hover{
+
+    background:#f4f4f4;
+
+}
+
+.expiring{
+
+    background:#ffcccc !important;
+
+}
+
+.low-stock{
+
+    background:#fff3a3 !important;
+
+}
